@@ -1,5 +1,4 @@
 import { useState } from "react";
-import tmdb from "../logic/tmdbApi.js";
 
 import { useNavigate } from "react-router-dom";
 
