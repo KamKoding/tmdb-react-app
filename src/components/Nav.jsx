@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/TMDB-logo-primary.svg";
 
 const Nav = () => {
   return (
