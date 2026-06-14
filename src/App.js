@@ -1,6 +1,9 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Results from "./pages/Results";
+import Footer from "./components/Footer";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={ <Home />}/>
+          <Route path="/results" element={ <Results />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
